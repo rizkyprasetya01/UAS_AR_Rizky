@@ -53,8 +53,7 @@
         <!-- create assets -->
         <a-assets timeout="900000">
            
-            <a-asset-item id="dorayaki" src="./assets/dorayaki/scene.gltf"></a-asset-item>
-          <a-asset-item id="doraemon" src="./assets/doraemon/scene.gltf"></a-asset-item>
+        <a-asset-item id="skull" src="./assets/skull/scene.gltf"></a-asset-item>
           
             
             
@@ -63,26 +62,26 @@
 
         <!-- handle hiro marker -->
         <a-marker preset="hiro">
-          <a-entity gltf-model="#doraemon" animation-mixer></a-entity>
+          <a-entity gltf-model="#skull" animation-mixer></a-entity>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="1">
             <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="green">
-                <a-gltf-model src="#doraemon" rotation="90 0 0" position="0 -0.2 0.2" scale="0.5 0.5 0.5"></a-gltf-model>
+                <a-gltf-model src="#skull" rotation="90 0 0" position="0 -0.2 0.2" scale="0.5 0.5 0.5"></a-gltf-model>
             </a-plane>
         </a-marker>
 
         <!-- handle matrix marker -->
         <a-marker type="barcode" value="2">
             <a-plane width="1" height="1" position="0 0 0" rotation="-90 0 0" color="cyan">
-                <a-gltf-model src="#dorayaki" rotation="90 0 0" position="0 -0.2 0.5" scale="0.5 0.5 0.5"></a-gltf-model>
+                <a-gltf-model src="#skull" rotation="90 0 0" position="0 -0.2 0.5" scale="0.5 0.5 0.5"></a-gltf-model>
             </a-plane>
         </a-marker>
         
         <!-- handle kanji marker -->
         <a-marker preset="kanji">
-            <a-entity gltf-model="#dorayaki" scale:"0.1 0.1 0.1"></a-entity>
+            <a-entity gltf-model="#skull" scale:"0.1 0.1 0.1"></a-entity>
         </a-marker>
 
         <!-- add a simple camera -->
